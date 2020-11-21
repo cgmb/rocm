@@ -1,0 +1,30 @@
+[submodule "base/rocm-cmake"]
+	path = base/rocm-cmake
+	url = https://github.com/RadeonOpenCompute/rocm-cmake.git
+[submodule "base/llvm-project"]
+	path = base/llvm-project
+	url = https://github.com/RadeonOpenCompute/llvm-project.git
+[submodule "base/ROCT-Thunk-Interface"]
+	path = base/ROCT-Thunk-Interface
+	url = https://github.com/RadeonOpenCompute/ROCT-Thunk-Interface
+[submodule "base/ROCR-Runtime"]
+	path = base/ROCR-Runtime
+	url = https://github.com/RadeonOpenCompute/ROCR-Runtime.git
+[submodule "base/ROCm-Device-Libs"]
+	path = base/ROCm-Device-Libs
+	url = https://github.com/RadeonOpenCompute/ROCm-Device-Libs.git
+[submodule "base/rocminfo"]
+	path = base/rocminfo
+	url = https://github.com/RadeonOpenCompute/rocminfo.git
+[submodule "base/ROCm-CompilerSupport"]
+	path = base/ROCm-CompilerSupport
+	url = https://github.com/RadeonOpenCompute/ROCm-CompilerSupport.git
+[submodule "base/ROCclr"]
+	path = base/ROCclr
+	url = https://github.com/ROCm-Developer-Tools/ROCclr.git
+[submodule "base/ROCm-OpenCL-Runtime"]
+	path = base/ROCm-OpenCL-Runtime
+	url = https://github.com/RadeonOpenCompute/ROCm-OpenCL-Runtime.git
+[submodule "base/HIP"]
+	path = base/HIP
+	url = https://github.com/ROCm-Developer-Tools/HIP.git

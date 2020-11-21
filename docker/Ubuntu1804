@@ -1,0 +1,23 @@
+FROM ubuntu:18.04
+
+RUN apt-get update -qq && apt-get install -qq git build-essential
+
+WORKDIR /root
+
+# need a newer version of CMake than is available from the Ubuntu 18.04 repos
+RUN git clone --depth 1 https://gitlab.kitware.com/cmake/cmake.git -b v3.18.4
+RUN (cd cmake && ./bootstrap --parallel=4 -- -DCMAKE_BUILD_TYPE=Release && make -j12 && make install)
+
+COPY . /root/
+RUN (cd base && ../scripts/000_deps.sh)
+RUN (cd base && ../scripts/010_rocm_cmake.sh)
+RUN (cd base && ../scripts/020_llvm.sh)
+RUN (cd base && ../scripts/030_roct_thunk.sh)
+RUN (cd base && ../scripts/040_device_libs.sh)
+RUN (cd base && ../scripts/050_rocr_runtime.sh)
+RUN (cd base && ../scripts/060_rocminfo.sh)
+RUN (cd base && ../scripts/070_comgr.sh)
+RUN (cd base && ../scripts/075_deps.sh)
+RUN (cd base && ../scripts/080_rocclr.sh)
+RUN (cd base && ../scripts/090_hip.sh)
+RUN (cd base && ../scripts/100_ldconfig.sh)

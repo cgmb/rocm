@@ -21,3 +21,6 @@ RUN (cd base && ../scripts/075_deps.sh)
 RUN (cd base && ../scripts/080_rocclr.sh)
 RUN (cd base && ../scripts/090_hip.sh)
 RUN (cd base && ../scripts/100_ldconfig.sh)
+
+RUN (cd base && ../scripts/210_rocblas.sh)
+RUN (cd base && ../scripts/220_rocsolver.sh)

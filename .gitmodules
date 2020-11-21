@@ -28,3 +28,9 @@
 [submodule "base/HIP"]
 	path = base/HIP
 	url = https://github.com/ROCm-Developer-Tools/HIP.git
+[submodule "libs/rocBLAS"]
+	path = libs/rocBLAS
+	url = https://github.com/ROCmSoftwarePlatform/rocBLAS.git
+[submodule "libs/rocSOLVER"]
+	path = libs/rocSOLVER
+	url = https://github.com/ROCmSoftwarePlatform/rocSOLVER.git
